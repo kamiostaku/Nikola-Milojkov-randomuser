@@ -1,0 +1,39 @@
+body
+{
+    background-color: #0e090d;
+}
+
+.nav-item a,.navbar-brand,.navbar-brand:hover,.nav-item a:link,.nav-item a:visited
+{
+    color: white;
+}
+.nav-item a:hover
+{
+    color: #CC3F34;
+    cursor: pointer;
+}
+
+#copiaSeed
+{
+    cursor: pointer;
+}
+
+#Persone
+{
+    color: white;
+    margin-top: 200px;
+}
+
+.footer
+{
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    color: white;
+}
+
+i:hover
+{
+    cursor: pointer;
+}
