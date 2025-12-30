@@ -43,6 +43,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" id="Default">Ricarica</a></li>
                         <li class="nav-item"><a class="nav-link" id="Preferiti">Preferiti</a></li>
+                        <li class="nav-item"><a class="nav-link" id="displayData">Mostra JSON</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,6 +68,23 @@
         </div>
     </div>
 
+    <!-- Modal raw json-->
+    <div class="modal" id="displayJson-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">JSON</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                </div>
+                <div class="modal-body container text-break" id="rawJson">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal filtro-->
     <div class="modal" id="filter-modal" tabindex="-1">
@@ -174,7 +192,7 @@
                     style="border: 1px solid white; width: 50px; height: 50px; border-radius: 30px; margin-right: 10px;"><i
                         class="bi bi-facebook"
                         style="color: grey; margin-left: 11px; margin-top: 8px;font-size: 27px;line-height: 47px;"></i></a>
-                <a href="https://github.com/kamiostaku" target="_blank"
+                <a href="https://github.com/kamiostaku/Nikola-Milojkov-randomuser" target="_blank"
                     style="border: 1px solid white; width: 50px; height: 50px; border-radius: 30px; margin-right: 10px;"><i
                         class="bi bi-github"
                         style="color: grey; margin-left: 11px; margin-top: 8px;font-size: 27px;line-height: 47px;"></i></a>

@@ -98,6 +98,17 @@ document.getElementById("slideshow").addEventListener("click", function () {
         loadCards([...savedPeople.values()]);
     }
 })
+document.getElementById("displayData").addEventListener("click", function () {
+    let nPersone = document.getElementById("results").value;
+    let promise = ajax.sendRequest("GET",`?results=${nPersone}&seed=${seedAgg}&format=pretty`);
+    promise.catch(ajax.errore);
+    promise.then(function(httpRequest)
+    {
+        const modalJson = new bootstrap.Modal("#displayJson-modal");
+        modalJson.show();
+        document.getElementById("rawJson").textContent = JSON.stringify(httpRequest.data.results);
+    });
+});
 
 //Medoto che fa la richiesta al server e reindiriza i dati verso la creazione dinamica delle card
 //Come parametro prende seed così quando il seed deve essere preimpostato si può evitare di fare certi controlli
