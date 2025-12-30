@@ -32,6 +32,15 @@
                 <div class="collapse navbar-collapse" id="navBar3">
                     <ul class="navbar-nav me-2 mb-2 mb-lg-0" id="navBarColor">
                         <li class="nav-item"><a class="nav-link" id="Filtro">Filtro</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Display
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-black" id="list" href="#">List</a></li>
+                                <li><a class="dropdown-item text-black" id="slideshow" href="#">SlideShow</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" id="Default">Ricarica</a></li>
                         <li class="nav-item"><a class="nav-link" id="Preferiti">Preferiti</a></li>
                     </ul>
@@ -46,7 +55,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h2 class="modal-title" id="exampleModalLabel">Errore</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"> </button> <!--Cambio 1-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
                 </div>
                 <div class="modal-body">
                     Non hai nessun elemento salvato nei preferiti
@@ -103,8 +112,6 @@
                                 <br>
                             </div>
 
-                            <br>
-
                             <!-- Tipi di caratteri -->
                             <div id="charOptions">
                                 <label>Caratteri consentiti:</label><br>
@@ -143,7 +150,13 @@
     </div>
 
     <!-- Cards -->
-    <div class="container text-center" id="Persone"> </div>
+    <div class="container text-center" id="Carta">
+        <div id="Persone"></div>
+        <div class="mt-5 container-fluid" id="Buttons"></div>
+    </div>
+
+    <br>
+    <br>
 
     <footer class="footer">
 

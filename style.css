@@ -9,7 +9,7 @@ body
 }
 .nav-item a:hover
 {
-    color: #CC3F34;
+    color: #CC3F34 !important;
     cursor: pointer;
 }
 
