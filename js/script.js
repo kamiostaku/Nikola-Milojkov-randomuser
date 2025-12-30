@@ -64,11 +64,39 @@ min.addEventListener("change", function () {
 //Metodi che impostano la modalità di visualizzazione
 document.getElementById("list").addEventListener("click", function () {
     showList = true;
-    caricaPersone(seedAgg);
+    let nPersone = document.getElementById("results").value;
+
+    if(!preferiti)
+    {
+        let promise = ajax.sendRequest("GET", "", { seed: seedAgg, results: nPersone });
+        promise.catch(ajax.errore);
+        promise.then(function(httpRequest)
+        {
+            loadCards(httpRequest.data.results);
+        });
+    }
+    else
+    {
+        loadCards([...savedPeople.values()]);
+    }
 })
 document.getElementById("slideshow").addEventListener("click", function () {
     showList = false;
-    caricaPersone(seedAgg);
+    let nPersone = document.getElementById("results").value;
+
+    if(!preferiti)
+    {
+        let promise = ajax.sendRequest("GET", "", { seed: seedAgg, results: nPersone });
+        promise.catch(ajax.errore);
+        promise.then(function(httpRequest)
+        {
+            loadCards(httpRequest.data.results);
+        });
+    }
+    else
+    {
+        loadCards([...savedPeople.values()]);
+    }
 })
 
 //Medoto che fa la richiesta al server e reindiriza i dati verso la creazione dinamica delle card
