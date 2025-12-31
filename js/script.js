@@ -106,7 +106,7 @@ document.getElementById("displayData").addEventListener("click", function () {
     {
         const modalJson = new bootstrap.Modal("#displayJson-modal");
         modalJson.show();
-        document.getElementById("rawJson").textContent = JSON.stringify(httpRequest.data.results);
+        document.getElementById("rawJson").textContent = JSON.stringify(httpRequest.data.results,null,2);
     });
 });
 
