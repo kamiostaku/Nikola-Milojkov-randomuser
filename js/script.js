@@ -518,7 +518,7 @@ function creaButtons(data) {
     btn = document.createElement("button");
     btn.id = "prev";
     btn.classList.add("btn", "btn-secondary", "me-2", "ms-2");
-    btn.textContent = "prev";
+    btn.textContent = "Prev";
     div.appendChild(btn);
 
     Buttons.appendChild(div);
