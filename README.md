@@ -8,8 +8,8 @@ Questo progetto è una semplice interfaccia grafica per l’[RandomUser](https:/
 La barra in alto contiene tutto ciò che serve, da sinistra a destra:
 1. **Icona e titolo della pagina** – così sai subito dove ti trovi.
 2. **Pulsante filtro** – apre un modal dove puoi scegliere i parametri della ricerca.
-   > [!NOTE]
-   > Se premi **“Seed di ricerca”** dopo aver salvato un seed, questo verrà copiato automaticamente. Il seed salvato verrà usato per le ricerche successive; se non lo salvi, invece, non verrà considerato. Attenzione: se non premi **“Salvare cambiamenti”**, le modifiche fatte nel filtro non saranno applicate fino a quando non userai il tasto di **ricarica**.
+> [!NOTE]
+> Se premi **“Seed di ricerca”** dopo aver salvato un seed, questo verrà copiato automaticamente. Il seed salvato verrà usato per le ricerche successive; se non lo salvi, invece, non verrà considerato. Attenzione: se non premi **“Salvare cambiamenti”**, le modifiche fatte nel filtro non saranno applicate fino a quando non userai il tasto di **ricarica**.
 3. **Tendina display** – puoi decidere se vedere gli utenti in **lista** o una **carta alla volta**, con una gestione comoda dei pulsanti.
 4. **Tasto di ricarica** – aggiornare i dati non è mai stato così semplice: niente più apertura continua del filtro.
 5. **Preferiti** – mostra tutti gli utenti che hai salvato come preferiti. In questa modalità, il tasto **Ricarica** diventa **Torna indietro**, così puoi tornare ai dati precedenti senza perderli.
